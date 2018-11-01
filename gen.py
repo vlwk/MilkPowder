@@ -21,5 +21,3 @@ for category in category_href:
     filename = category + ".txt"
     with open(filename, "w") as f:
         f.write(read(new_url).prettify())
-
-print("yay")
