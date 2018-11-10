@@ -12,8 +12,8 @@ with open("coldstorage2.csv", "r") as f:
             cnt = 1
             continue
         arr = []
-        a = line[0].rstrip().split(" ")
-        b = line[2].rstrip().split('/')
+        a = line[0].rstrip().split(" ") # name
+        b = line[2].rstrip().split('/') # tree
         for c in b:
             d = c.split('-')
             for i in d:
