@@ -1,6 +1,6 @@
 from main import *
 
-file = open("coldstorage3.csv", "w")
+file = open("coldstorage4.csv", "w")
 file.write("name,url,tree,brand,size,price,promotion,tags,\n")
 filez = csv.writer(file)
 
@@ -36,7 +36,7 @@ with open("children.csv", "r") as f:
                         row.append("")
                     arr = []
                     aa = b.text.rstrip().split(" ")
-                    bb = b['href'][9:].rstrip().split("/")
+                    bb = j[0].rstrip().split("/")
                     for cc in bb:
                         dd = cc.split('-')
                         for i in dd:
@@ -79,7 +79,7 @@ with open("children.csv", "r") as f:
                     row.append("")
                 arr = []
                 aa = b.text.rstrip().split(" ")
-                bb = b['href'][9:].rstrip().split("/")
+                bb = j[0].rstrip().split("/")
                 for cc in bb:
                     dd = cc.split('-')
                     for i in dd:
