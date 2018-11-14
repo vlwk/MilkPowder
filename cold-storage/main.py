@@ -14,13 +14,6 @@ def read(url):
     content = html.read()
     return BeautifulSoup(content, 'lxml')
 
-def create_file(url):
-    new_url = BASE_URL + url
-    filename = url + ".txt"
-    with open(filename, "w") as f:
-        content = read(new_url)
-        f.write(content.prettify())
-        print(filename + " created successfully!")
 
 def dfs(node):
     url = BASE_URL + node
